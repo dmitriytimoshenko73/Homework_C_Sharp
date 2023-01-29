@@ -32,18 +32,16 @@ int numberB1 = Convert.ToInt32(strNumberB1);
 Console.WriteLine("Enter number three ");
 string? strNumberC1 = Console.ReadLine ();
 int numberC1 = Convert.ToInt32(strNumberC1);
-if (numberA1 > numberB1) 
+int max = numberA1 ;
+
 {
-    Console.WriteLine(numberA1 + "max");    
+    if (numberB1 > max) max = numberB1;
+    if (numberC1 > max) max = numberC1;
+
+    Console.WriteLine("max = " + " " + max);
 }
-else if(numberB1 > numberC1)
-{ 
-    Console.WriteLine(numberB1 + "max");
-}
-else
-{
-    Console.WriteLine(numberC1 + "max");
-}  
+
+
 
 //Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
