@@ -1,10 +1,10 @@
 ﻿//Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
 Console.WriteLine("Enter number one  ");
-string strNumberA = Console.ReadLine ();
+string? strNumberA = Console.ReadLine ();
 int numberA = Convert.ToInt32(strNumberA);
 Console.WriteLine("Enter number two ");
-string strNumberB = Console.ReadLine ();
+string? strNumberB = Console.ReadLine ();
 int numberB = Convert.ToInt32(strNumberB);
 if (numberA > numberB)
 {
@@ -24,13 +24,13 @@ else
 // 22 3 9 -> 22
 
 Console.WriteLine("Enter number one ");
-string strNumberA1 = Console.ReadLine ();
+string? strNumberA1 = Console.ReadLine ();
 int numberA1 = Convert.ToInt32(strNumberA1);
 Console.WriteLine("Enter number two ");
-string strNumberB1 = Console.ReadLine ();
+string? strNumberB1 = Console.ReadLine ();
 int numberB1 = Convert.ToInt32(strNumberB1);
 Console.WriteLine("Enter number three ");
-string strNumberC1 = Console.ReadLine ();
+string? strNumberC1 = Console.ReadLine ();
 int numberC1 = Convert.ToInt32(strNumberC1);
 if (numberA1 > numberB1) 
 {
@@ -52,7 +52,7 @@ else
 //7 -> нет
 
 Console.WriteLine("Enter number ");
-string strNumber = Console.ReadLine ();
+string? strNumber = Console.ReadLine ();
 int number = Convert.ToInt32(strNumber);
 if (number%2 == 0)
 {
@@ -69,7 +69,7 @@ else
 //8 -> 2, 4, 6, 8
 
 Console.WriteLine("Enter number ");
-string strNumberD = Console.ReadLine ();
+string? strNumberD = Console.ReadLine ();
 int numberD = Convert.ToInt32(strNumberD);
 int result = 2;
 while (result < numberD)
